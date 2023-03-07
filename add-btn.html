@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart button</title>
+    <style>
+        *{box-sizing: border-box;}
+        .box {
+            margin: 150px auto;
+            height: 60px;
+            width: 150px;
+            background: blue;
+            text-align: center;
+            line-height: 60px;
+            position: relative;
+            z-index: 0;
+        }
+
+        .box a{
+
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .box1 {
+            
+            height: 60px;
+            width: 150px;
+            background:transparent;
+            border: 3px solid lightblue;
+            position: absolute ;
+            top: 0 ;
+            left:0;
+            z-index: -1;
+            transition: 1s;
+        }
+
+        .box:hover .box1 {
+
+            height: 80px;
+            width: 170px;
+            transform: translate(-10px,-10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+            <a href="#">Add to cart</a>
+            <div class="box1"></div>
+    </div>
+    
+</body>
+</html>
